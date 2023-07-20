@@ -3,6 +3,11 @@ import java.util.Arrays;
 public class LuckyNumberCalculator {
 
     public int getYourLuckyNumber(int yourBDay) {
+
+        if(yourBDay < 0){
+             throw new IllegalArgumentException();
+        }
+
         int temp = yourBDay;
         int length = 0;
 
